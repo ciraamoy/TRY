@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextLevel - Rental PS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tambahan.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR (tidak diubah, hanya menu Cek Game dihapus) ===== -->
+<header class="navbar">
+  <div class="bubbles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <a href="#beranda" class="logo">
+    <img src="gambar/logo-nl.gif" alt="Logo NL NextLevel" class="logo-img">
+    <span class="logo-text">Next Level</span>
+  </a>
+  <nav class="menu" id="menu">
+    <a href="#beranda">Beranda</a>
+    <a href="#daftar-ps">Daftar PS</a>
+    <a href="#login" class="btn-masuk">Masuk</a>
+    <a href="#reservasi" class="btn-reservasi">Reservasi</a>
+  </nav>
+  <a href="#menu" class="hamburger" aria-label="Buka menu">
+    <span></span><span></span><span></span>
+  </a>
+  <a href="#beranda" class="tutup" aria-label="Tutup menu">&#10005;</a>
+</header>
+
+<!-- ===== BERANDA ===== -->
+<main id="beranda">
+
+  <section class="nl-hero">
+    <h1>Naik level, main sampai lupa pulang</h1>
+    <p>Pilih PS dan game favoritmu, lalu reservasi lewat WhatsApp.</p>
+    <a href="#reservasi" class="btn-lime">Reservasi sekarang</a>
+  </section>
+
+  <section class="nl-sec" id="daftar-ps">
+    <h2>Daftar PS</h2>
+    <div class="nl-box">
+      <h3>PlayStation 5</h3>
+      <p class="nl-price">Rp12.000 / jam</p>
+      <p>6 game tersedia</p>
+    </div>
+    <div class="nl-box">
+      <h3>PlayStation 4</h3>
+      <p class="nl-price">Rp8.000 / jam</p>
+      <p>4 game tersedia</p>
+    </div>
+    <p>Jam buka: <b>10.00 - 23.00</b> setiap hari. Lama main 1 sampai 4 jam.</p>
+  </section>
+
+  <section class="nl-sec" id="game">
+    <h2>Game</h2>
+    <div class="nl-box">
+      <h3>Game PS5</h3>
+      <ul>
+        <li>EA Sports FC 26</li>
+        <li>Mortal Kombat 1</li>
+        <li>Spider-Man 2</li>
+        <li>God of War Ragnarök</li>
+        <li>Gran Turismo 7</li>
+        <li>Tekken 8</li>
+      </ul>
+    </div>
+    <div class="nl-box">
+      <h3>Game PS4</h3>
+      <ul>
+        <li>Naruto Storm 4</li>
+        <li>Crash Team Racing</li>
+        <li>It Takes Two</li>
+        <li>GTA V</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Reservasi: langsung ke WhatsApp. Ganti 6281234567890 dengan nomor pengelola. -->
+  <section class="nl-sec" id="reservasi">
+    <h2>Reservasi</h2>
+    <div class="nl-box">
+      <p>Isi pesan di bawah, lalu tekan tombol untuk membuka WhatsApp.</p>
+      <form action="https://wa.me/6281234567890" method="get" target="_blank">
+        <textarea name="text" rows="10">Halo Next Level, saya mau reservasi:
+
+Nama:
+No. telepon:
+Email:
+Game:
+Tanggal:
+Jam mulai:
+Lama main (1-4 jam):</textarea>
+        <button type="submit" class="btn-lime">Kirim lewat WhatsApp</button>
+      </form>
+      <p>Reservasi sah setelah pesanmu dibalas.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== HALAMAN LOGIN (tidak diubah) ===== -->
+<section class="auth" id="login">
+  <div class="auth-card">
+    <img src="gambar/logo-nl-card.gif" alt="" class="auth-logo">
+    <h1>Masuk</h1>
+    <form>
+      <label for="login-akun">Akun</label>
+      <input type="text" id="login-akun" placeholder="Masukkan nama akun" autocomplete="username" required>
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" placeholder="Minimal 6 karakter" minlength="6" autocomplete="current-password" required>
+      <p class="auth-hint">Isi akun dan password (minimal 6 karakter) dulu ya.</p>
+      <a href="#beranda" class="btn-lime">Masuk</a>
+    </form>
+    <p class="auth-switch">Belum punya akun? <a href="#daftar">Daftar</a></p>
+  </div>
+</section>
+
+<!-- ===== HALAMAN DAFTAR (tidak diubah) ===== -->
+<section class="auth" id="daftar">
+  <div class="auth-card">
+    <img src="gambar/logo-nl-card.gif" alt="" class="auth-logo">
+    <h1>Daftar</h1>
+    <form>
+      <label for="daftar-akun">Akun</label>
+      <input type="text" id="daftar-akun" placeholder="Buat nama akun" autocomplete="username" required>
+      <label for="daftar-password">Password</label>
+      <input type="password" id="daftar-password" placeholder="Minimal 6 karakter" minlength="6" autocomplete="new-password" required>
+      <p class="auth-hint">Isi akun dan password (minimal 6 karakter) dulu ya.</p>
+      <a href="#login" class="btn-lime">Daftar</a>
+    </form>
+    <p class="auth-switch">Sudah punya akun? <a href="#login">Masuk</a></p>
+  </div>
+</section>
+
+</body>
+</html>

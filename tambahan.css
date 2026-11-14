@@ -1,0 +1,11 @@
+/* Tambahan untuk Beranda. style.css tidak diubah. */
+#beranda{max-width:900px;margin:0 auto;padding:90px 20px 40px;color:#fff}
+.nl-hero{padding:20px 0 30px}
+.nl-hero h1{font-size:40px;margin:0 0 10px}
+.nl-sec{padding:16px 0;scroll-margin-top:90px}
+.nl-sec h2{margin:0 0 12px}
+.nl-box{background:#10186e;border:3px solid #7a5cff;border-radius:20px;padding:16px;margin-bottom:12px}
+.nl-box h3{margin:0 0 6px}
+.nl-price{color:#c9ff3f;font-weight:600}
+.nl-box ul{margin:0;padding-left:20px}
+.nl-box textarea{width:100%;box-sizing:border-box;font:inherit;padding:10px;border-radius:12px;margin-bottom:12px}
